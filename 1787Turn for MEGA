@@ -1,0 +1,23 @@
+Ural--1787Turn for MEGA
+by NowOrNever(520Eos@gmail.com)
+====
+#include<iostream>
+
+using namespace std;
+int max(int x,int y){
+	return (x>y)?x:y;
+}
+int main()
+{
+	int k,n,a,ans;
+	while(cin>>k>>n){
+		ans = 0;
+		for(int i = 0;i < n;i++){
+		cin>>a;
+		ans += a;
+		ans = max(0,ans-k);
+		}
+		cout<<ans<<endl;
+	}
+	return 0;
+}
