@@ -7,6 +7,7 @@ using namespace std;
 int max(int x,int y){
 	return (x>y)?x:y;
 }
+
 int main()
 {
 	int k,n,a,ans;
