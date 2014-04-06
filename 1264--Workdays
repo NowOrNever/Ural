@@ -1,0 +1,17 @@
+Ural--1264--Workdays
+by NowOrNever(520Eos@gmail.com)
+====
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <string>
+
+using namespace std;
+typedef long long LL;
+int main(){
+    LL N,M;
+    cin>>N>>M;
+    cout<<N*(M+1)<<endl;
+    
+    return 0;
+}
