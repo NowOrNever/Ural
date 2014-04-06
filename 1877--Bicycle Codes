@@ -1,4 +1,6 @@
-
+Ural--1877--Bicycle Codes
+by NowOrNever（520Eos@gmail.com）
+====
 #include <iostream>
 #include <cstdio>
 #include <cstring>
@@ -10,6 +12,6 @@ int main()
 {
 	int x,y;
 	cin>>x>>y;
-	(x%2==0||y%2==1)?cout<<"yes"<<endl:cout<<"no"<<endl;
+	(x % 2 == 0 || y % 2 == 1) ? cout << "yes" << endl : cout << "no" << endl;
 	return 0;
 }
