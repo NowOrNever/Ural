@@ -1,0 +1,16 @@
+Ural--1639--Chocolate 2
+by NoworNever(520eos@gmail.com)
+====
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <string>
+
+using namespace std;
+
+int main(){
+    int m,n;   
+    cin>>m>>n;
+    (m % 2 == 1 && n % 2 == 1) ? cout<<"[second]=:]" : cout<<"[:=[first]";
+    return 0;
+}
