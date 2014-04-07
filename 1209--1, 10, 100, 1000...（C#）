@@ -1,0 +1,16 @@
+Ural--1209--1, 10, 100, 1000...
+by NowOrNever（520Eos@gmail.com）
+====
+using System;
+
+class T1209
+{
+  static void Main()
+  {
+    for (int i = int.Parse(Console.ReadLine()); i > 0; i--)
+    {
+      double x = (Math.Sqrt(8.0 * int.Parse(Console.ReadLine()) - 7) - 1) / 2;
+      Console.Write(((x == (int)x) ? 1 : 0) + " ");
+    }
+  }
+}
