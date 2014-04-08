@@ -1,0 +1,24 @@
+Ural--1082--Gaby Ivanushka
+by NowOrNever(520Eos@gmail.com)
+====
+
+/*
+他给的程序——意思貌似是排序一串数据，问不用移动的数的被检查到的个数。假设要排序的数据序列的，发现F(N)=F(N-1)+(N+1)，然后数列求通项，发觉F(N)=(N*N+3*N-4)/2,这个就是最后那个c……
+   然后……（直接输出1~N）
+*/
+#include<iostream>
+#include<cstdio>
+#include<cmath>
+#include<cstring>
+
+using namespace std;
+
+int main()
+{
+	long n;
+	cin>>n;
+	for(long i = 1;i < n;i++)
+		cout<<i<<" ";
+	cout<<n<<endl;
+	return 0;
+}
