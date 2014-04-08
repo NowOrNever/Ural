@@ -1,0 +1,30 @@
+Ural--1052--Rabbit Hunt
+by NowOrNever（520Eos@gmail.com）
+====
+#include<iostream>
+#include<cstdio>
+#include<cmath>
+#include<cstring>
+
+using namespace std;
+
+int main()
+{
+	int n,ans,max = 0;
+	double x[200],y[200];
+	cin>>n;
+	for(int i = 0;i < n;i++)
+		cin>>x[i]>>y[i];
+		
+	for(int i = 0;i < n - 1; i++){
+		for(int j = i+1;j < n - 1;j++){
+			ans = 2;
+			for(int k = j+1;k < n;k++)
+			if((x[k]-x[i]) * (y[j]-y[i]) == (x[j]-x[i])*(y[k]-y[i]))
+			ans++;
+			if(ans > max)  max = ans;
+		}
+	}
+	cout<<max<<endl;
+	return 0;
+}
