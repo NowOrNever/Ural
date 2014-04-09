@@ -1,0 +1,28 @@
+Ural--1026--Questions and Answers
+by NowOrNever（520Eos@gmail.com）
+====
+#include<iostream>
+#include<cstdio>
+#include<cmath>
+#include<cstring>
+#include<algorithm>
+
+using namespace std;
+
+int main()
+{
+	int n,k,K,a[100001];
+	string s;
+	cin>>n;
+	for(int i = 0;i < n;i++){
+		cin>>a[i];
+	}
+	sort(a,a+n);
+	cin>>s;
+	cin>>K;
+	for(int i = 0;i < K;i++){
+		cin>>k;
+		cout<<a[k-1]<<endl;
+	}
+	return 0;
+}
