@@ -8,7 +8,7 @@ by NowOrNever（520Eos@gmail.com）
 */
 ====
 #include<iostream>
-#include<cstdio>
+#include<cstdio> 
 #include<string>
 #include<cstring>
 #include<cmath>
@@ -23,6 +23,9 @@ int main()
 	int i=0;
     while(cin>>d[++i]);
 	for(int j=i-1;j>0;j--)
+	{
 		printf("%.4lf\n",sqrt(d[j]));
+	}
+	
 	return 0;
 }
