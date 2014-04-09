@@ -1,0 +1,39 @@
+Ural--1005--Stone Pile
+by NowOrnever（520Eos@gmail.com）
+====
+/*
+0-1背包，将2堆石头分开，使其重量差最小
+*/
+#include <cstdio>
+#include <cstdlib>
+#include <iostream>
+#include<algorithm>
+#include<string>
+#include<cstring>
+
+int a[1000010];
+int s[25];
+using namespace std;
+int main()
+{
+	int n,sum = 0 ,h = 0;
+	int count = 0;
+	while(~scanf("%d",&n))
+	{
+		for(int i=0;i<n;i++)
+		{
+			scanf("%d",&s[i]);
+			sum += s[i];
+		}
+		memset(a,0,sizeof(a));
+		for(int j=0;j<n;j++)
+			for(int k=sum/2;k>=s[j];k--)
+			{
+				if(a[k]<a[k-s[j]]+s[j])
+				a[k] = a[k-s[j]]+s[j];
+			}
+	
+		printf("%d",sum - 2*a[sum/2]);
+	}
+	return 0;
+}
