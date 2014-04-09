@@ -2,12 +2,9 @@ Ural--1001--Reverse Root
 by NowOrNever（520Eos@gmail.com）
 /*
 开方，保留四位小数，最后倒序输出
-
-切记，此段代码只可以用G++ 4.7.2交，这样你会得到一个AC，如果你用G++ 4.7.2 C++11来交，
-很抱歉，你会得到一个WA，至于究竟什么原因，我也不知道啊！（大哭ing……）
 */
 ====
-#include<iostream>
+##include<iostream>
 #include<cstdio>
 #include<string>
 #include<cstring>
@@ -21,7 +18,7 @@ int main()
 {
 	
 	int i=0;
-    while(cin>>d[++i]);
+    while(cin>>d[++i])
 	for(int j=i-1;j>0;j--){
 		printf("%.4lf\n",sqrt(d[j]));
 	}
